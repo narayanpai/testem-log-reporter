@@ -1,0 +1,24 @@
+{
+  "name": "testem-log-reporter",
+  "version": "0.0.1",
+  "description": "Parses testem logs and generates reports in json format",
+  "main": "src/index.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figures": "^3.0.0",
+    "fs-extra": "^8.1.0",
+    "ora": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  },
+  "repository": "https://github.com/narayanpai/testem-log-reporter.git",
+  "author": "Narayan Pai <nballambetu@linkedin.com>",
+  "license": "MIT",
+  "private": false
+}
