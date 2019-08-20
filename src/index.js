@@ -27,11 +27,7 @@ class LogReporter {
       passed: 0
     };
 
-    this.patterns = [
-      /id:\s([a-z|\-\.]*)/,
-      /(requested id is the same as the one returned by the adapter)/,
-      /formatName called with invalid personalName object/
-    ];
+    this.patterns = [/id:\s([a-z|\-\.]*)/, ...this.options.patterns];
 
     // init ora spinner
     this.spinner = ora({
@@ -72,9 +68,10 @@ class LogReporter {
           // count existing log type
           logStoreResult.count++;
         } else {
-          // found new log type, so store it
+          // strip stacktraces
           const newLineIndex = text.indexOf('\n');
 
+          // found new log type, so store it
           this.logStore.push({
             id,
             type,

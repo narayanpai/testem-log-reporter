@@ -18,7 +18,7 @@
     "prettier": "^1.16.4"
   },
   "repository": "https://github.com/narayanpai/testem-log-reporter.git",
-  "author": "Narayan Pai <nballambetu@linkedin.com>",
+  "author": "Narayan Pai",
   "license": "MIT",
   "private": false
 }
